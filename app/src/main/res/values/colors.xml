@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#BF1922</color>
+    <color name="primaryVariant">#CC1B23</color>
+    <color name="primary_09">#09BF1922</color>
+    <color name="secondary">#03735F</color>
+    <color name="yellow">#FFDF00</color>
+    <color name="secondaryVariant">#0FBFA0</color>
+    <color name="secondaryVariant_16">#160FBFA0</color>
+    <color name="accent">#094D73</color>
+    <color name="black">#FF000000</color>
+    <color name="black_20">#20000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreen" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBrandingImage">@drawable/quakehunter</item>
+        <item name="postSplashScreenTheme">@style/Theme.QuakeHunter</item>
+    </style>
+</resources>

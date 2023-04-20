@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">QuakeHunter</string>
+
+    <!--SIGNUP Labels-->
+    <string name="signup_title">Sign Up</string>
+    <string name="username_label">Usuario</string>
+    <string name="passwprd_label">Contraseña</string>
+    <string name="confirm_pasword_label">Confirmar Contraseña</string>
+    <string name="sign_up_label">Crear Usuario</string>
+    <!-- LOGIN Labels-->
+    <string name="login_title">Login</string>
+    <string name="login_label">Iniciar sesión</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--HOME Labels-->
+    <string name="select_date_title">Seleccionar Fecha</string>
+    <string name="query_date_labels">Realizar Consulta</string>
+    <string name="show_last_query">Mostrar Última Consulta</string>
+
+    <!--List Labels-->
+    <string name="quake_title">Sismos</string>
+    <string name="quake_description">Sismo reportado %1$s, magnitud %2$.2f en escala %3$s, %4$s</string> <!--Sismo reportado 12/04/2023, magnitud 1.29 en escala de Rich, 5km SWW of Idyllwild, CA -->
+
+    <!--Details Labels -->
+    <string name="place_quake">Ubicación: %1$s</string>
+    <string name="latitud">lat: %1$.4f</string>
+    <string name="longitud">lon: %1$.4f</string>
+    <string name="date_quake">Fecha del suceso: %1$s</string>
+    <string name="mag_quake">Magnitud: %1$.2f en escala Richter</string>
+    <string name="last_update">Ultima actualizacion: %1$s</string>
+
+    <!--Message Labels -->
+    <string name="err_msg_invalid_username">El nombre de ususario no debe estar vació</string>
+    <string name="err_msg_invalid_password">Las contraseñas no coinciden</string>
+    <string name="err_msg_invalid_credentials">Usuario o contraseña incorrectos</string>
+    <string name="err_msg_invalid_date">Selecciona una fecha para poder realizar la consulta</string>
+    <string name="err_msg_no_data">Actualmente no existe información</string>
+    <string name="msg_logout">Realmente quieres cerrar la sesión actual</string>
+    <string name="msg_acept">Aceptar</string>
+    <string name="msg_cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:maxLines="1"
+            android:text="Sismo 9.8 en México"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/title_text_size_xl"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/map" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:gravity="center_vertical"
+            android:maxLines="4"
+            android:text="Sismo reportado el 12/04/2023, magnitud 1.29 en escala de Rich, 5km SWW of Idyllwild, CA"
+            android:textSize="@dimen/title_text_size_md"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewPlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:drawableLeft="@drawable/place"
+            android:gravity="center_vertical"
+            android:text="@string/place_quake"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+        <TextView
+            android:id="@+id/textViewLatitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:drawableLeft="@drawable/place"
+            android:gravity="center_vertical"
+            android:text="@string/latitud"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toStartOf="@id/textViewLongitud"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPlace" />
+
+        <TextView
+            android:id="@+id/textViewLongitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:drawableLeft="@drawable/place"
+            android:gravity="center_vertical"
+            android:text="@string/longitud"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/textViewLatitude"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPlace" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:drawableLeft="@drawable/calendar"
+            android:gravity="center_vertical"
+            android:text="@string/date_quake"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLatitude" />
+
+        <TextView
+            android:id="@+id/textViewMagnitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:drawableLeft="@drawable/earth_quake"
+            android:gravity="center_vertical"
+            android:text="@string/mag_quake"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+        <TextView
+            android:id="@+id/textViewLastupdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:gravity="right"
+            android:text="@string/last_update"
+            android:textSize="@dimen/title_text_size_sm"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMagnitude" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="@dimen/spacing" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="25dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
