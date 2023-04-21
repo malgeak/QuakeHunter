@@ -25,3 +25,6 @@ Debido al uso de Maps SDK es necesario que el emulador o dispsitivo cuente con s
 correctamente. 
 
 El nivel de API minimo para esta aplicación es 23
+
+## Importante
+Es necesario agregar el archivo de local.properties el cual deberá contener la variable MAPS_API_KEY y el KEY  de uso para Maps de Google
