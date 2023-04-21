@@ -1,59 +1,27 @@
-# Project Title
+# QuakeHunter
 
-A short description about the project and/or client.
+Aplicación demo desarrollada para Android con el lenguaje de programación Kotlin y el patron de diseño MVVM. Esta aplicación utiliza el API https://earthquake.usgs.gov/fdsnws/event/1/ para mostrar información de sismos que ocurren al rededor del mundo.
 
-## Getting Started
+## Stack
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+*Kotlin
+*MVVM
+*Splash Screen by Google
+*Maps SDK for Android
+*Retrofit
+*Gson
+*Dagger
+*Room
+*Coroutines
+*Navigation
+*LiveData
+*Databinding
+*ViewBinding
+*Observables
 
-### Prerequisites
+### Requisitos de dispositivo
 
-The things you need before installing the software.
+Debido al uso de Maps SDK es necesario que el emulador o dispsitivo cuente con soporte de los servicios de google, de lo contrario el mapa no se mostrará
+correctamente. 
 
-* You need this
-* And you need this
-* Oh, and don't forget this
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running.
-
-```
-$ First step
-$ Another step
-$ Final step
-```
-
-## Usage
-
-A few examples of useful commands and/or tasks.
-
-```
-$ First example
-$ Second example
-$ And keep this in mind
-```
-
-## Deployment
-
-Additional notes on how to deploy this on a live or release system. Explaining the most important branches, what pipelines they trigger and how to update the database (if anything special).
-
-### Server
-
-* Live:
-* Release:
-* Development:
-
-### Branches
-
-* Master:
-* Feature:
-* Bugfix:
-* etc...
-
-## Additional Documentation and Acknowledgments
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+El nivel de API minimo para esta aplicación es 23
